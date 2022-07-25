@@ -4,7 +4,10 @@
         "now": "Now in theaters",
         "premiers": "Premiers",
         "register": "Register",
-        "login": "Login"
+        "login": "Login",
+        "movies": "Movies",
+        "theathers": "theathers"
+
     },
 
     "footer":{

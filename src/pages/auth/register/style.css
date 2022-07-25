@@ -1,0 +1,49 @@
+.wrap-register {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.wrap-register p {
+    font-size: 1.5rem;
+    color: gold;
+    text-shadow: 0 0 6px #fff;
+}
+
+.form-register {
+    background-image: url(../../../images/fondo.jpg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.wrap-register form {
+    width: 90%;
+}
+
+/* ========================================== */
+
+@media (min-width: 770px) {
+
+    .wrap-register form {
+        width: 60%;
+    }
+}
+
+
+/* ========================================== */
+
+@media (min-width: 1025px) {
+
+    .wrap-register form {
+        width: 40%;
+    }
+}

@@ -140,17 +140,14 @@
     margin: 0 5px;
 }
 
-
-
-
 .navbar{
     height: 50px !important;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 10px;
-    border:none;
     z-index: 100;
+    border:none;
 }
 
 .wrap_collapse{
@@ -158,8 +155,6 @@
     border-radius: 5px;
     width: 250px;
 }
-
-
 
 
 

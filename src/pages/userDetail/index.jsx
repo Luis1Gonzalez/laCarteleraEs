@@ -5,14 +5,15 @@ import { FaStepBackward } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import { AiTwotoneHeart } from "react-icons/ai";
-// import { useUser } from "./../../core/users/user.hook";
+
 
 const UserMovieDetail = () => {
-  // const { user } = useUser();
-  // const token =sessionStorage.getItem('auth_token')
+
   const [t, i18n] = useTranslation("global");
   const { title } = useParams();
   const [film, setFilm] = useState({});
+
+
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${title}`)

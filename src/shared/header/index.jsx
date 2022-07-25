@@ -43,25 +43,19 @@ export default function Header() {
       </div>
       </div>
 
-      <div className="wrap-nav">
-        <div className="nav-links"><Link className="links" to = '/'>{t("header.home")}</Link></div>
-        <div className="nav-links"><Link className="links" to = '/now'>{t("header.now")}</Link></div>
-        <div className="nav-links"><Link className="links" to = '/premiers'>{t("header.premiers")}</Link></div>
-      </div>
-
 
 {/* inicio */}
 
 <Navbar className="navbar"   expand="lg">
       <Container>
         <Navbar.Toggle className="navbar" aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="wrap_collapse me-auto">
+        <Navbar.Collapse className="collapse" id="basic-navbar-nav">
+          <Nav className="wrap_collapse mx-md-3">
             <Link className="links" to = '/'>{t("header.home")}</Link>
             <Link className="links" to = '/now'>{t("header.now")}</Link>
             <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
-            <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
-            <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
+            <Link className="links" to = '/user'>{t("header.movies")}</Link>
+            <Link className="links" to = '/near'>{t("header.theathers")}</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

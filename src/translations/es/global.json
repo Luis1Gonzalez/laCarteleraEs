@@ -4,7 +4,9 @@
         "now": "Ahora en Cines",
         "premiers": "Estrenos",
         "register": "Registrarse",
-        "login": "Ingresar"
+        "login": "Ingresar",
+        "movies": "Peliculas",
+        "theathers": "Cines"
     },
 
     "footer":{
