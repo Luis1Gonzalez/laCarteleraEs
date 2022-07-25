@@ -57,11 +57,11 @@ export default function Header() {
         <Navbar.Toggle className="navbar" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="wrap_collapse me-auto">
-            <Nav.Link className="links" to = '/'>{t("header.home")}</Nav.Link>
-            <Nav.Link className="links" to = '/now'>{t("header.now")}</Nav.Link>
-            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
-            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
-            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
+            <Link className="links" to = '/'>{t("header.home")}</Link>
+            <Link className="links" to = '/now'>{t("header.now")}</Link>
+            <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
+            <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
+            <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
