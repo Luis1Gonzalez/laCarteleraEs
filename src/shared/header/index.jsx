@@ -50,7 +50,7 @@ export default function Header() {
       <Container>
         <Navbar.Toggle className="navbar" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="collapse" id="basic-navbar-nav">
-          <Nav className="wrap_collapse mx-md-3">
+          <Nav className="wrap_collapse mx-3">
             <Link className="links" to = '/'>{t("header.home")}</Link>
             <Link className="links" to = '/now'>{t("header.now")}</Link>
             <Link className="links" to = '/premiers'>{t("header.premiers")}</Link>
