@@ -1,0 +1,75 @@
+{
+    "header":{
+        "home": "Home",
+        "now": "Now in theaters",
+        "premiers": "Premiers",
+        "register": "Register",
+        "login": "Login"
+    },
+
+    "footer":{
+        "legal": "Legal Notification",
+        "cookies": "Cookie Policy",
+        "rgpd": "RGPD"
+    },
+
+    "home":{
+        "now": "Find the current movie listings and new releases from any device by tapping Now on Cinemas or Premieres.",
+        "top": "Check the Top Ten made with the vote of our Registered Users.",
+        "register": "Register and you will have exclusive access to our website:",
+        "liUno": "You will be able to search for movies and access all their information.",
+        "liDos": "You will be able to search for the nearest movie theaters to your location."
+    },
+
+    "inTheaters": {
+        "now": "In Theathers"
+    },
+
+    "premiers": {
+        "premiers": "Premiers"
+    },
+
+    "navUsers": {
+        "searchMovie": "Search Movies",
+        "searchTheater": "Search Theater",
+        "user": "User"
+    },
+
+    "userDetail": {
+        "userDetail": "Back"
+    },
+
+    "register": {
+        "email": "Enter your Email",
+        "pass": "Enter your Password",
+        "age": "Enter your Age",
+        "btn-register": "Register"
+    },
+
+    "user": {
+"search":"Search Movie",
+"result": "There are no results.",
+"unsubscribe": "Unsubscribe"
+    },
+
+    "details": {
+        "genre": "Genre",
+        "year": "Year",
+        "country": "Country",
+        "writer": "Writer",
+        "actors": "Actors",
+        "budget": "Budget",
+        "time": "Run Time",
+        "awards": "Awards"
+    },
+
+    "near": {
+        "phone": "Phone",
+        "address": "Address"
+    }
+
+
+
+
+
+}

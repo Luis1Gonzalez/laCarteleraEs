@@ -1,0 +1,187 @@
+.wrap-nowInTheater {
+    box-shadow: 0 0 2px #000, 0 0 3px #fff;
+    box-sizing: border-box;
+}
+
+.wrap-carousel .imagen {
+    height: 250px !important;
+}
+
+.title-now{
+    font-size:2rem;
+    display:flex;
+    justify-content: center;
+    text-shadow: 0 0 4px white,0 0 8px blue,0 0 10px red ;
+    color:rgb(48, 47, 47);
+    font-style: italic;
+}
+
+.wrap-grid {
+    width: 100%;
+    box-shadow: 0 0 2px #ccc, 0 0 3px #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    box-shadow: 0 0 2px #ccc, 0 0 3px #fff;
+    margin: 20px;
+    width: 85%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px 0 0;
+}
+
+.poster-now {
+    box-shadow: 0 0 2px #ccc, 0 0 3px #fff;
+    width: 50%;
+    border-radius: 5px 0px 0px 5px;
+    border:1px solid #ccc;
+    background-color: pink;
+}
+
+.poster-now img{
+    width: 100%;
+    height:100%;
+}
+
+.description {
+    width: 50%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description h3 {
+    display: inline-block;
+    color: #000;
+    text-shadow: 0 0 2px #000, 0 0 4px #fff;
+}
+
+.wrap-ranking {
+    display: flex;
+}
+
+.ranking-average {
+    background-color: cadetblue;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.ranking-votes {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.bilike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: rgb(97, 97, 246)
+}
+
+/* ================================= */
+
+/* @media (min-width: 481px) {
+
+    .card {
+        width: 40%;
+        height: 150px;
+    }
+
+    .card-description {
+        font-size: 1rem;
+    }
+
+    .card-description h3 {
+        font-size: .8rem;
+    }
+
+    .card-description h6 {
+        font-size: .6rem;
+    }
+
+    .wrap-btn-card {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn-card {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: white;
+        font-size: .7rem;
+    }
+
+    .wrap-carousel .imagen {
+        height: 350px !important;
+    }
+
+
+} */
+
+
+/* ================================= */
+
+@media (min-width: 769px) {
+
+    .card {
+        width: 42%;
+        height: 250px;
+    }
+    
+    .poster-now img{
+        width: 100%;       
+    }
+
+    .card-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-description h6 {
+        font-size: 1rem;
+    }
+
+
+    .wrap-carousel .imagen {
+        height: 400px !important;
+    }
+
+}
+
+/* ================================= */
+
+@media (min-width: 1025px) {
+
+    .card {
+        width: 42%;
+    }
+
+    .wrap-carousel .imagen {
+        height: 450px !important;
+    }
+
+    .poster-now{
+        height: 248px;
+    }
+    
+    .poster-now img{
+        width: 100%;
+    }
+
+}

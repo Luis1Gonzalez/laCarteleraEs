@@ -1,0 +1,26 @@
+.wrap-footer {
+    width: 100%;
+    box-shadow: 0 0 2px black, 0 0 3px white;
+    color: #000;
+    text-shadow: 0 0 6px black;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.footer-wrap-legales {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 10px 0;
+}
+
+.footer-copy {
+    text-align: center;
+    cursor: pointer;
+}
+
+.cookies,
+.gdpr,
+.notification {
+    cursor: pointer;
+}

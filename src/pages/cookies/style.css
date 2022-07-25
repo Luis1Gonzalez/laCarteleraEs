@@ -1,0 +1,12 @@
+
+.wrap-cookies{
+    padding:10px;
+    width: 100%;
+}
+
+.wrap-cookies-article{
+    color: #000;
+    text-shadow: 0 0 6px #fff, 0 0 9px #000;
+    text-align: justify;
+    padding:20px;
+}

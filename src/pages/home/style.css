@@ -1,0 +1,174 @@
+.wrap-home {
+    margin-top: 15px;
+    box-sizing: border-box;
+    color:#000;
+}
+
+.wrap-carousel .imagen {
+    height: 250px !important;
+}
+
+.wrap-grid {
+    width: 100%;
+    box-shadow: 0 0 2px #000, 0 0 3px #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wrap-self {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.self-descriptions {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.self-now,
+.self-topten {
+    border-bottom: 1px solid;
+}
+
+.self-now img {
+    width: 100%;
+}
+
+.self-now h5 {
+    padding: 0 20px;
+}
+
+.self-topten img {
+    width: 100%;
+}
+
+.self-topten h5 {
+    padding: 0 20px;
+}
+
+
+.self-registered h5 {
+    padding: 0 20px;
+}
+
+.wrap-logoDB {
+    width: 100%;
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+
+.logoDB {
+    width: 25%;
+    height: 100%
+}
+
+.logoDB img {
+    width: 100%;
+    height: 80%;
+    padding: 0 20%
+}
+
+
+/* ================================= */
+
+@media (min-width: 481px) {
+
+    .wrap-carousel .imagen {
+        height: 350px !important;
+    }
+}
+
+/* ================================= */
+
+@media (min-width: 769px) {
+
+    .wrap-carousel .imagen {
+        height: 400px !important;
+    }
+
+    .self-now h5 {
+        font-size: 2rem;
+    }
+
+    .self-topten h5 {
+        font-size: 2rem;
+    }
+
+    .self-registered h5 {
+        font-size: 2rem;
+    }
+
+    .self-registered ul li {
+        font-size: 1.3rem;
+    }
+
+    .logoDB {
+        width: 20%;
+        height: 100%
+    }
+
+}
+
+/* ================================= */
+
+@media (min-width: 1025px) {
+
+    .wrap-carousel .imagen {
+        height: 350px !important;
+    }
+
+
+
+    .wrap-self {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: transparent;
+        color: #000;
+        border: none;
+    }
+
+    .self-descriptions {
+        width: 30%;
+    }
+
+    .self-now,
+    .self-topten,
+    .self-registered {
+        border-bottom: none;
+    }
+
+    .self-now img {
+        width: 100%;
+    }
+
+    .self-now h5 {
+        padding: 0 20px;
+    }
+
+    .self-topten img {
+        width: 100%;
+    }
+
+    .self-topten h5 {
+        padding: 0 20px;
+    }
+
+
+    .self-registered h5 {
+        padding: 0 20px;
+    }
+
+    .logoDB {
+        width: 10%;
+        height: 100%
+    }
+
+
+}

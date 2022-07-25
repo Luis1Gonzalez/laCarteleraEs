@@ -1,0 +1,66 @@
+
+.grands{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card-theater{
+    background-color: rgb(112, 235, 239);
+    width: 90%;
+    border-radius: 10px;
+    padding:20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px #000, 0 0 5px #fff;
+    color:#000;
+}
+
+.card-theater h3{
+    height: 70px;
+background-color: rgb(117, 114, 114);
+text-align: center;
+box-shadow: 0 0 3px #000, 0 0 5px #fff;
+border-radius: 5px;
+margin-bottom: 20px;
+color:#fff;
+text-shadow:0 0 5px #000, 0 0 8px #fff;
+padding:0 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+/* ================================= */
+
+@media (min-width: 769px) {
+
+    .grands{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .card-theater{
+        width: 40%;  
+        margin: 10px 0;
+    }   
+
+}
+
+/* ================================= */
+
+@media (min-width: 1025px) {
+    .card-theater{
+        width: 30%;  
+        margin-top:30px;
+    }
+
+}

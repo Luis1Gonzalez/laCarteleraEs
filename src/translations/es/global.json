@@ -1,0 +1,71 @@
+{
+    "header":{
+        "home": "Inicio",
+        "now": "Ahora en Cines",
+        "premiers": "Estrenos",
+        "register": "Registrarse",
+        "login": "Ingresar"
+    },
+
+    "footer":{
+        "legal": "Notificación Legal",
+        "cookies": "Politica de Cookies",
+        "rgpd": "RGPD"
+    },
+
+    "home":{
+        "now": "Encuentra la cartelera actual y estrenos desde cualquier dispositivo pulsando Ahora en Cines o Estrenos.",
+        "top": "Check el Top Ten realizado con la votación de nuestros Usuarios Registrados.",
+        "register": "Registrate y tendras acceso exclusivo dentro de nuestra página:",
+        "liUno": "Podras buscar Peliculas y acceder a toda su información.",
+        "liDos": "Podras Buscar los cines mas cercanos a tu ubicación."
+    },
+
+    "inTheaters": {
+        "now": "En Cartelera"
+    },
+
+    "premiers": {
+        "premiers": "Estrenos"
+    },
+
+    "navUsers": {
+        "searchMovie": "Buscar Peliculas",
+        "searchTheater": "Buscar Cines",
+        "user": "Usuario"
+    },
+
+    "userDetail": {
+        "userDetail": "Volver"
+    },
+
+    "register": {
+        "email": "Ingresa tu Email",
+        "pass": "Ingresa tu Contraseña",
+        "age": "Ingresa tu Edad",
+        "btn-register": "Registrarse"
+    },
+
+    "user": {
+        "search":"Buscar Pelicula",
+        "result": "No hay resultados.",
+        "unsubscribe": "Darse de Baja"
+            },
+
+    "details": {
+        "genre": "Genero",
+        "year": "Año",
+        "country": "País",
+        "writer": "Escritor",
+        "actors": "Actores",
+        "budget": "Presupuesto",
+        "time": "Duración",
+        "awards": "Premios"
+    },
+
+    "near": {
+        "phone": "Telefono",
+        "address": "Dirección"
+    }
+
+}
