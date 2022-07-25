@@ -3,9 +3,14 @@ import logo from "./../../images/logo.png";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
 export default function Header() {
   const [t, i18n] = useTranslation("global");
-
 
   return (
     <div className="wrap-header">
@@ -31,7 +36,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        
+       
         
         <div className = 'login'><Link className="links" to = '/auth/login'>{t("header.login")}</Link></div>
         <div className="register"><Link className="links" to = '/auth/register'>{t("header.register")}</Link></div>
@@ -43,6 +48,28 @@ export default function Header() {
         <div className="nav-links"><Link className="links" to = '/now'>{t("header.now")}</Link></div>
         <div className="nav-links"><Link className="links" to = '/premiers'>{t("header.premiers")}</Link></div>
       </div>
+
+
+{/* inicio */}
+
+<Navbar className="navbar"   expand="lg">
+      <Container>
+        <Navbar.Toggle className="navbar" aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="wrap_collapse me-auto">
+            <Nav.Link className="links" to = '/'>{t("header.home")}</Nav.Link>
+            <Nav.Link className="links" to = '/now'>{t("header.now")}</Nav.Link>
+            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
+            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
+            <Nav.Link className="links" to = '/premiers'>{t("header.premiers")}</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+
+{/* fin */}
+      
     </div>
   );
 }

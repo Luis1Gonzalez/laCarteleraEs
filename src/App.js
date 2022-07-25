@@ -21,15 +21,22 @@ import Now from './pages/now';
 import Premiers from './pages/premiers';
 import UserMovieDetail from './pages/userDetail';
 import UserDos from './pages/userdos';
+import { useTranslation } from "react-i18next";
 
 const StyledApp = styled.div`
 color:${(props) => props.theme.fontColor};
 `;
 
+
+
 function App() {
 
   const [theme, setTheme] = useState("light");
   const [isChecked, setIsChecked] = useState(false);
+
+
+ 
+ 
 
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
@@ -38,6 +45,10 @@ function App() {
   const handleOnChange = () => {
     setIsChecked(!isChecked);
   };
+
+
+
+
 
 
   return (
@@ -50,6 +61,35 @@ function App() {
       <GlobalStyles/>
       <StyledApp>
     <Header />
+
+
+
+    {/* <div className="lenguage-btn">
+          <div className="wrap-buttons">
+            <button
+              className="nav-btn nav-btn-es"
+              onClick={() => i18n.changeLanguage("es")}
+            >
+              ES
+            </button>
+          </div>
+    </div> */}
+
+            {/* <button
+              className="nav-btn nav-btn-en"
+              onClick={() => i18n.changeLanguage("en")}
+            >
+              EN
+            </button>
+          </div>
+        </div> */}
+
+        {/* <div onClick={()=> lang}>Esto</div> */}
+
+
+
+
+
 
 <div className = 'container-loc'>      
         <div className="toggle-container">

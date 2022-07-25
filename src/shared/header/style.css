@@ -141,6 +141,34 @@
 }
 
 
+
+
+.navbar{
+    height: 50px !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    border:none;
+    z-index: 100;
+}
+
+.wrap_collapse{
+    background-color: silver !important;
+    border-radius: 5px;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ============================= */
 
 @media (min-width:1025px) {
