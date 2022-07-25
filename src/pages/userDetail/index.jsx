@@ -1,24 +1,27 @@
 import { useState, useEffect } from "react";
 import "./style.css";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { FaStepBackward } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import { AiTwotoneHeart } from "react-icons/ai";
-
+// import { useUser } from "./../../core/users/user.hook";
 
 const UserMovieDetail = () => {
-
+  // const { user } = useUser();
+  // const token =sessionStorage.getItem('auth_token')
   const [t, i18n] = useTranslation("global");
-  const { title } = useParams();
+  // const { title } = useParams();
   const [film, setFilm] = useState({});
-  
+
+  let title ="";
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${title}`)
       .then((r) => r.json())
       .then((f) => setFilm(f));
-  }, [title]);
+  }, []);
+// }, [title]);
 
   // console.log(user);
 
@@ -27,6 +30,16 @@ const UserMovieDetail = () => {
         <div className="wrap-film">
 
 
+{/* <div className='wrap-heart'><AiTwotoneHeart
+                  onClick={() =>
+                    fetch(`${process.env.REACT_APP_API_BASE_URL}/users/${user._id}/favorites`,
+                                {
+                                    method: 'PATCH',
+                                    headers: { "Authorization": `Bearer ${token}`, },
+                                    
+                                })
+                  }
+                /></div> */}
 
       <div className="wrap-poster">
         <img src={film.Poster ? film.Poster : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dCO_yi0ryq5_JUv7fMtqQQHaEK%26pid%3DApi&f=1'} alt={`poster de ${film.Title}`} />

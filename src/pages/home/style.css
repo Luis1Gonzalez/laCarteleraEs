@@ -92,20 +92,28 @@
         height: 400px !important;
     }
 
+    .wrap-self {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: transparent;
+        color: #000;
+        border: none;
+    }
+
     .self-now h5 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .self-topten h5 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .self-registered h5 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .self-registered ul li {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .logoDB {
@@ -122,16 +130,7 @@
     .wrap-carousel .imagen {
         height: 350px !important;
     }
-
-
-
-    .wrap-self {
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: transparent;
-        color: #000;
-        border: none;
-    }
+    
 
     .self-descriptions {
         width: 30%;

@@ -81,7 +81,7 @@ export default function Home(){
   </div>
 
 <div className="self-descriptions self-registered">
-  <h5>{t("home.resgister")}</h5>
+  <h5>{t("home.register")}</h5>
 <ul>
   <li>{t("home.liUno")}</li>
   <li>{t("home.liDos")}</li>
