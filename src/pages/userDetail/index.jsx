@@ -12,8 +12,7 @@ const UserMovieDetail = () => {
   const [t, i18n] = useTranslation("global");
   const { title } = useParams();
   const [film, setFilm] = useState({});
-
-
+  
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${title}`)
