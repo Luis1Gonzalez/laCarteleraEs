@@ -29,9 +29,14 @@ color:${(props) => props.theme.fontColor};
 function App() {
 
   const [theme, setTheme] = useState("light");
+  const [isChecked, setIsChecked] = useState(false);
 
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  const handleOnChange = () => {
+    setIsChecked(!isChecked);
   };
 
 
@@ -41,16 +46,22 @@ function App() {
     <div className='wrap'>
 
     <BrowserRouter>
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isChecked ? lightTheme : darkTheme}>
       <GlobalStyles/>
       <StyledApp>
     <Header />
 
-<div className='wrap-switch'>
-  
-<div onClick = {() => themeToggler()} className ='turn-off'>{<FaPowerOff />}</div>
-
-</div>
+<div className = 'container-loc'>      
+        <div className="toggle-container">
+          <label className="switch">
+            <input type="checkbox"
+            checked={isChecked} 
+            onChange={handleOnChange}
+            />
+            <span className="slider round"></span>
+          </label>
+        </div>
+        </div>
     
 
     <Routes>
