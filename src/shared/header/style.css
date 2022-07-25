@@ -172,10 +172,14 @@
 
 /* ============================= */
 
-@media (min-width:1025px) {
+@media (min-width:990px) {
 
-    .wrap-options {
-        margin-right: 30px;
+    .wrap_collapse{
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        
     }
+   
 
 }
