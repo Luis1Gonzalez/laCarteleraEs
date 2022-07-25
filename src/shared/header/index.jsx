@@ -47,7 +47,7 @@ export default function Header() {
 {/* inicio */}
 
 <Navbar className="navbar"   expand="lg">
-      <Container>
+
         <Navbar.Toggle className="navbar" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="collapse" id="basic-navbar-nav">
           <Nav className="wrap_collapse mx-3">
@@ -58,7 +58,7 @@ export default function Header() {
             <Link className="links" to = '/near'>{t("header.theathers")}</Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+
     </Navbar>
 
 
