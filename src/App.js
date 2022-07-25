@@ -79,7 +79,7 @@ function App() {
       <Route path='/now' element = {<Now/>}></Route>
       <Route path='/premiers' element = {<Premiers/>}></Route>      
       <Route path='/user' element = {<User/>}></Route>
-      {/* <Route path='/user/:title' element = {<RequireAuth><UserMovieDetail/></RequireAuth>}></Route> */}
+      <Route path='/user/:title' element = {<UserMovieDetail/>}></Route>
       <Route path='/near' element = {<Near/>}></Route>
       <Route path='/notification' element ={<Notification />}></Route>
       <Route path='/cookies' element ={<Cookies />}></Route>
