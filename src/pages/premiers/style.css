@@ -26,10 +26,9 @@
 .card-prev {
     margin: 5px;
     width: 85%;
-    height: 300px;
     display: flex;
     justify-content: center;
-    padding: 0 ;
+    padding: 5px ;
     box-shadow: 0 0 2px #000, 0 0 3px #ccc;
     border-radius: 5px;
 }
@@ -45,37 +44,13 @@
 }
 
 
-/* ================================= */
-
-@media (min-width: 481px) {
-
-    .card-prev {
-        width: 40%;
-        height: 150px;
-    }
-
-    .card-description {
-        font-size: 1rem;
-    }
-
-    .card-description h3 {
-        font-size: .8rem;
-    }
-
-    .card-description h6 {
-        font-size: .6rem;
-    }
-
-}
-
 
 /* ================================= */
 
 @media (min-width: 769px) {
 
     .card-prev {
-        width: 20%;
-        height: 170px;
+        width: 30%;
         padding: 10px 0;
     }
 
@@ -93,10 +68,6 @@
 
 @media (min-width: 1025px) {
 
-    .card-prev {
-        width: 30%;
-        height: 430px;
-    }
 
     .poster img {
         height: 100%;

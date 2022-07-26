@@ -30,7 +30,7 @@ color:${(props) => props.theme.fontColor};
 
 function App() {
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [isChecked, setIsChecked] = useState(false);
 
 
@@ -38,7 +38,7 @@ function App() {
  
 
   const themeToggler = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    theme === "dark" ? setTheme("light") : setTheme("dark");
   };
 
   const handleOnChange = () => {
