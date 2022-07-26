@@ -22,6 +22,7 @@ import Premiers from './pages/premiers';
 import UserMovieDetail from './pages/userDetail';
 import { useTranslation } from "react-i18next";
 
+
 const StyledApp = styled.div`
 color:${(props) => props.theme.fontColor};
 `;
@@ -29,7 +30,7 @@ color:${(props) => props.theme.fontColor};
 
 
 function App() {
-
+  const [t, i18n] = useTranslation("global");
   const [theme, setTheme] = useState("dark");
   const [isChecked, setIsChecked] = useState(false);
 
@@ -60,6 +61,24 @@ function App() {
       <GlobalStyles/>
       <StyledApp>
     <Header />
+    
+<div className='wrap-options'>
+    <div className="lenguage-btn">
+          <div className="wrap-buttons">
+            <button
+              className="nav-btn nav-btn-es"
+              onClick={() => i18n.changeLanguage("es")}
+            >
+              ES
+            </button>
+            <button
+              className="nav-btn nav-btn-en"
+              onClick={() => i18n.changeLanguage("en")}
+            >
+              EN
+            </button>
+          </div>
+        </div>
 
 <div className = 'container-loc'>      
         <div className="toggle-container">
@@ -73,6 +92,7 @@ function App() {
         </div>
         </div>
     
+        </div>
 
     <Routes>
       <Route path = '/' element = {<Home></Home>} />

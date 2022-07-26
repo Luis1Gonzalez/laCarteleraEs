@@ -2,7 +2,6 @@ import "./style.css";
 import logo from "./../../images/logo.png";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -19,25 +18,7 @@ export default function Header() {
       </logo>
 
       <div className="options"> 
-<div className="wrap-options">
-<div className="lenguage-btn">
-          <div className="wrap-buttons">
-            <button
-              className="nav-btn nav-btn-es"
-              onClick={() => i18n.changeLanguage("es")}
-            >
-              ES
-            </button>
-            <button
-              className="nav-btn nav-btn-en"
-              onClick={() => i18n.changeLanguage("en")}
-            >
-              EN
-            </button>
-          </div>
-        </div>
-       
-        
+<div className="wrap-auth">        
         <div className = 'login'><Link className="links" to = '/auth/login'>{t("header.login")}</Link></div>
         <div className="register"><Link className="links" to = '/auth/register'>{t("header.register")}</Link></div>
       </div>
