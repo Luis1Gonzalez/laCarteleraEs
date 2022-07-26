@@ -24,41 +24,24 @@
 }
 
 .card-prev {
-    margin: 20px;
+    margin: 5px;
     width: 85%;
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 5px 0 0;
+    justify-content: center;
+    padding: 0 ;
     box-shadow: 0 0 2px #000, 0 0 3px #ccc;
-    padding-top: 20px;
     border-radius: 5px;
 }
 
 .poster {
-    box-shadow: 0 0 2px #000, 0 0 3px #fff;
     width: 70%;
-    border-radius: 5px 0px 0px 5px;
-    border: 1px solid #ccc;
     display: flex;
+    align-items: center;
 }
 
 .poster img {
     width: 100%;
-}
-
-.description {
-    width: 50%;
-    padding: 20px 10px;
-    display: flex;
-    text-align: center;
-}
-
-.description h3 {
-    display: inline-block;
-    color: rgb(132, 132, 241);
-    text-shadow: 0 0 2px #000, 0 0 4px #fff;
-    font-size: 1rem;
 }
 
 
@@ -91,29 +74,18 @@
 @media (min-width: 769px) {
 
     .card-prev {
-        width: 42%;
-        height: 430px;
+        width: 20%;
+        height: 170px;
+        padding: 10px 0;
     }
 
-    .poster {
-        width: 70%;
-    }
+
 
     .poster img {
-        width: 100%;
+        height: 100%;
     }
 
-    .card-description h3 {
-        font-size: 1.3rem;
-    }
 
-    .card-description h6 {
-        font-size: 1rem;
-    }
-
-    .imagen {
-        height: 450px !important;
-    }
 
 }
 
@@ -126,12 +98,8 @@
         height: 430px;
     }
 
-    .imagen {
-        height: 250px !important;
-    }
-
-    .poster {
-        height: 350px;
+    .poster img {
+        height: 100%;
     }
 
 }

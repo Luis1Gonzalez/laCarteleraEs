@@ -18,7 +18,9 @@ export default function Premiers(){
     const [t, i18n] = useTranslation("global");
 
     useEffect(()=> {
-        fetch(`https://api.internationalshowtimes.com/v4/movies?apikey=${process.env.REACT_APP_API_KEY_ISDB}&include_upcomings=true&countries=ES&city=madrid&release_date_from={31-07-2022}`)
+        // fetch(`https://api.internationalshowtimes.com/v4/movies?apikey=${process.env.REACT_APP_API_KEY_ISDB}&include_upcomings=true&countries=ES&city=madrid&release_date_from={31-07-2022}`)
+        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=279a6209c3a88953123109103b1416fd&language=es-Es`)
+
         .then((response) => {
           return response.json();
         })
@@ -89,14 +91,14 @@ export default function Premiers(){
 
 <div className="wrap-grid">
 
-{movie.movies?.map((c) => (
+{movie.results?.map((c) => (
 <div className='card-prev' key={c.id}>
   <div className='poster'>
-    <img src={c.poster_image_thumbnail ? c.poster_image_thumbnail : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dCO_yi0ryq5_JUv7fMtqQQHaEK%26pid%3DApi&f=1' } alt={`poster de ${c.title}`} />
+    <img src={c.poster_path ? `https://image.tmdb.org/t/p/original${c.poster_path}` : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dCO_yi0ryq5_JUv7fMtqQQHaEK%26pid%3DApi&f=1' } alt={`poster de ${c.original_title}`} />
   </div>
-  <div className='description'>
-<h3>{c.title ? c.title : 'Titulo no Encontrado'}</h3>
-</div>
+  {/* <div className='description'> */}
+{/* <h3>{c.original_title ? c.original_title : 'Titulo no Encontrado'}</h3> */}
+{/* </div> */}
 
 </div>
 ))}
