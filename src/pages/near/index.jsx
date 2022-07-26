@@ -2,7 +2,6 @@ import './style.css'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
-import NavUser from '../../shared/navUsers';
 
 export default function Near(){
  
@@ -54,8 +53,6 @@ export default function Near(){
 
     return(
         <div className='grands'>
-
-<NavUser />
     
     {
         theater.cinemas?.map((t) => (

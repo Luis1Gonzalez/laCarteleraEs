@@ -1,6 +1,5 @@
 import "./style.css";
 import React, { useEffect, useState } from "react";
-import NavUser from "../../shared/navUsers";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
@@ -71,7 +70,6 @@ const getTokenUser = sessionStorage.getItem('auth_token')
 
   return (
     <div classname="grand-user ">
-      <NavUser />
 
       <div className="wrap-movieSearch">
         <div className="wrap-input">
