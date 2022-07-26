@@ -18,7 +18,8 @@ export default function Premiers(){
     const [t, i18n] = useTranslation("global");
 
     useEffect(()=> {
-               fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=279a6209c3a88953123109103b1416fd&language=es-Es`)
+       
+        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=279a6209c3a88953123109103b1416fd&language=es-Es`)
 
         .then((response) => {
           return response.json();

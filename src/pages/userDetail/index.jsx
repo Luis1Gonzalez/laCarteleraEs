@@ -17,13 +17,15 @@ const UserMovieDetail = () => {
   let title ="";
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${title}`)
+    // fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${title}`)
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=279a6209c3a88953123109103b1416fd&language=es-ES&query=${title}`)
+
       .then((r) => r.json())
       .then((f) => setFilm(f));
-  }, []);
-// }, [title]);
+  }, [title]);
 
-  // console.log(user);
+
+  console.log(film);
 
   return (
     <div className="wrap-details">
