@@ -65,9 +65,10 @@
 
 .wrap-ranking {
     display: flex;
+    justify-content: space-around;
 }
 
-.ranking-average {
+.ranking-average{
     background-color: cadetblue;
     width: 39px;
     height: 39px;
@@ -80,9 +81,16 @@
 }
 
 .ranking-votes {
+    background-color: cadetblue;
+    width: 39px;
+    height: 39px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    margin-left:5px;
 }
 
 .bilike {
