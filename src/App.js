@@ -6,20 +6,19 @@ import Login from './pages/auth/login';
 import Near from './pages/near';
 // import RequireAuth from './core/auth/auth.component';
 import User from './pages/user';
+import UserMovieDetail from './pages/userDetail';
 import Header from './shared/header';
 import Footer from './shared/footer';
 import Home from './pages/home';
 import {useState} from 'react';
 import styled, { ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from  "./themes.js";
-import { FaPowerOff } from "react-icons/fa";
 import Notification from './pages/notification';
 import Cookies from './pages/cookies';
 import Grpd from './pages/grpd';
 import Error from './pages/error';
 import Now from './pages/now';
 import Premiers from './pages/premiers';
-import UserMovieDetail from './pages/userDetail';
 import { useTranslation } from "react-i18next";
 
 
@@ -99,7 +98,7 @@ function App() {
       <Route path='/now' element = {<Now/>}></Route>
       <Route path='/premiers' element = {<Premiers/>}></Route>      
       <Route path='/user' element = {<User/>}></Route>
-      <Route path='/user/:title' element = {<UserMovieDetail/>}></Route>
+      <Route path='/film/:tittle' element = {<UserMovieDetail/>}></Route>
       <Route path='/near' element = {<Near/>}></Route>
       <Route path='/notification' element ={<Notification />}></Route>
       <Route path='/cookies' element ={<Cookies />}></Route>

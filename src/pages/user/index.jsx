@@ -50,7 +50,7 @@ const getTitle = async (title) => {
 
          <div className="card-search">
           {film.Search?.map((f) => (
-            <div className="film-card" key={f.imdbID} >
+            <div className="film-card" key={f.imdbID} onClick = {() => navigate(`/film/${f.Title}`)} >
               <h1>{f.Title}</h1>
               
               <div>              
