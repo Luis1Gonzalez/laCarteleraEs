@@ -38,7 +38,6 @@ const getTitle = async (title) => {
   .then(f => setFilm(f))
     },[tittle])
 
-console.log(film)
   return(
 
 <div classname="grand-user ">
