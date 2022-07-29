@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import logoISDB from "./../../images/logoISDB.png"
 import logoOMDB from "./../../images/logoOMDB.png"
 import logoTMDB from "./../../images/logoTMDB.png"
+import { useEffect, useState } from 'react';
 
 
 
@@ -18,6 +19,14 @@ import logoTMDB from "./../../images/logoTMDB.png"
 export default function Home(){
   const [t, i18n] = useTranslation("global");
 
+  const [rated, setRated] = useState({})
+
+  useEffect(() =>{ 
+    fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
+    .then(r =>r.json())
+    .then(f => setRated(f))
+      },[])
+console.log(rated)
 
     return(
         <div className='wrap-home'>
@@ -89,6 +98,19 @@ export default function Home(){
 </div>
 
 </div>
+
+<h2 className='title_wrap_rated'>Lo mas Popular según TMDB</h2>
+<div className="wrap_rated">  
+{rated.results?.map((c) => (
+<div className='card_rated' key={c.id}>
+  <div className='poster-rated'>
+  <img src={`https://image.tmdb.org/t/p/w500/${c.poster_path}`} alt={`poster de ${c.title}`} />
+  </div>  
+</div>
+))}
+
+</div>
+
 
 <div className='wrap-logoDB'>
   <div className="logoDB">

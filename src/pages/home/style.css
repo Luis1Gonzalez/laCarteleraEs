@@ -30,7 +30,8 @@
 }
 
 .self-now,
-.self-topten {
+.self-topten,
+.self-descriptions {
     border-bottom: 1px solid;
 }
 
@@ -74,6 +75,31 @@
     padding: 0 20%
 }
 
+.wrap_rated{
+    width:100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.card_rated{
+margin: 7px 0;
+width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 2px #000, 0 0 3px #fff;
+    padding:3px;
+}
+
+
+.poster-rated img{
+    width: 100%;
+}
+
+.title_wrap_rated{
+    text-align: center;
+}
 
 /* ================================= */
 
@@ -120,6 +146,17 @@
         width: 20%;
         height: 100%
     }
+
+    .wrap_rated{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .card_rated{
+        width: 32%;
+    }
+        
+        
 
 }
 
