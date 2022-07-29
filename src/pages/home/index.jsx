@@ -32,7 +32,7 @@ export default function Home(){
 
 
 useEffect(()=> {
-  fetch(`${process.env.REACT_APP_API_kEY_TMDB}`)
+  fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
   .then((response) => {
     return response.json();
   })
