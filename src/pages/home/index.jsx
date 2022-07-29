@@ -19,14 +19,38 @@ import { useEffect, useState } from 'react';
 export default function Home(){
   const [t, i18n] = useTranslation("global");
 
-  const [rated, setRated] = useState({})
+  const [movie, setMovie] = useState({})
 
-  useEffect(() =>{ 
-    fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
-    .then(r =>r.json())
-    .then(f => setRated(f))
-      },[])
-console.log(rated)
+//   useEffect(() =>{ 
+//     fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
+//     .then(r =>r.json())
+//     .then(f => setRated(f))
+//       },[])
+// console.log(rated)
+
+
+
+
+useEffect(()=> {
+  fetch(`${process.env.REACT_APP_API_kEY_TMDB}`)
+  .then((response) => {
+    return response.json();
+  })
+
+  .then((m) => {
+    setMovie(m)
+    //  console.log(m)
+  })
+
+.catch((error) => {
+console.log(error);
+});
+  
+  },[])
+
+
+
+
 
     return(
         <div className='wrap-home'>
@@ -101,7 +125,7 @@ console.log(rated)
 
 <h2 className='title_wrap_rated'>Lo mas Popular según TMDB</h2>
 <div className="wrap_rated">  
-{rated.results?.map((c) => (
+{movie.results?.map((c) => (
 <div className='card_rated' key={c.id}>
   <div className='poster-rated'>
   <img src={`https://image.tmdb.org/t/p/w500/${c.poster_path}`} alt={`poster de ${c.title}`} />
