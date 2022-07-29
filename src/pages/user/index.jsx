@@ -24,16 +24,12 @@ if (title === ""){
   tittle=title
 }
 
-
-  // let API_SEARCH = `http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API_KEY_OMDB}&type=movie&s=${title}`;
-  //  let API_ORIGINAL = `http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API_KEY_OMDB}&type=movie&s=hulk`;
-
 const getTitle = async (title) => {
   setTitle(title)
 }    
 
     useEffect(() =>{ 
-  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API_KEY_OMDB}&type=movie&s=${tittle}`)
+  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_API_KEY_OMDB}&type=movie&s=${tittle}`)
   .then((r =>r.json()))
   .then(f => setFilm(f))
     },[tittle])

@@ -16,7 +16,7 @@ const UserMovieDetail = () => {
 
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${tittle}`)
+    fetch(`https://www.omdbapi.com/?plot=full&apikey=${process.env.REACT_APP_API_KEY_OMDB}&t=${tittle}`)
     // fetch(`https://api.themoviedb.org/3/search/movie?api_key=279a6209c3a88953123109103b1416fd&language=es-ES&query=${tittle}`)
 
       .then((r) => r.json())
