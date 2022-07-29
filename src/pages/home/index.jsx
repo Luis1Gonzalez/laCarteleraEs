@@ -32,7 +32,7 @@ export default function Home(){
 
 
 useEffect(()=> {
-  fetch(`https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&api_key=279a6209c3a88953123109103b1416fd&language=es`)
+  fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
   .then((response) => {
     return response.json();
   })
