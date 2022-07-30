@@ -19,13 +19,13 @@ const UserMovieDetail = () => {
   // http://api.themoviedb.org/3/movie/${movie_id}?api_key=279a6209c3a88953123109103b1416fd
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${tittle}?api_key=279a6209c3a88953123109103b1416fd&language=es-ES`)
+    fetch(`https://api.themoviedb.org/3/movie/${tittle}?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es-ES`)
       .then((r) => r.json())
       .then((f) => setMovie(f));
   }, [tittle]);
 
   useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/movie/${tittle}/videos?api_key=279a6209c3a88953123109103b1416fd&append_to_response=videos`)
+    fetch(`https://api.themoviedb.org/3/movie/${tittle}/videos?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&append_to_response=videos`)
     .then((n) => n.json())
           .then((t) => setTrailer(t));
   },[tittle])
