@@ -159,38 +159,21 @@ width: 40%;
     .wrap-carousel .imagen {
         height: 350px !important;
     }
-    
-
-    .self-descriptions {
-        width: 30%;
-    }
-
     .self-now,
     .self-topten,
     .self-registered {
         border-bottom: none;
+        display: flex;
     }
 
     .self-now img {
-        width: 100%;
-    }
-
-    .self-now h5 {
-        padding: 0 20px;
+        width: 50%;
     }
 
     .self-topten img {
-        width: 100%;
+        width: 50%;
     }
 
-    .self-topten h5 {
-        padding: 0 20px;
-    }
-
-
-    .self-registered h5 {
-        padding: 0 20px;
-    }
 
     .logoDB {
         width: 10%;

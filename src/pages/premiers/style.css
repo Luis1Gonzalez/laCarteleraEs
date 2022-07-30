@@ -18,14 +18,14 @@
 
 .wrap-grid {
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: center;
 }
 
 .card-prev {
     margin: 5px;
-    width: 85%;
+    width: 45%;
     display: flex;
     justify-content: center;
     padding: 5px ;
@@ -70,6 +70,11 @@
 
     .poster img {
         height: 100%;
+    }
+
+    .card-prev {
+        width: 20%;
+        padding: 10px 0;
     }
 
 }
