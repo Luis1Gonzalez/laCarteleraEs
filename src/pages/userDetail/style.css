@@ -56,16 +56,18 @@
     justify-content: center;
 }
 
+.producers img{
+    width: 40%;
+margin:3px 0;
+}
+
 .wrap_genres,
 .wrap_producers,
 .wrap_countries{
     border-bottom: 1.5px solid rgba(149, 139, 139, 0.3);
 }
 
-.producers img{
-    width: 40%;
-margin:3px 0;
-}
+
 
 .countries{
     display: flex;
@@ -74,6 +76,10 @@ margin:3px 0;
 
 .countries p{
     border:none;
+}
+
+.trailers a{
+    color:blue
 }
 
 

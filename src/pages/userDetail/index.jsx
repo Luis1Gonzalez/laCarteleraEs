@@ -13,16 +13,22 @@ const UserMovieDetail = () => {
   const [t, i18n] = useTranslation("global");
   const { tittle } = useParams();
   const [movie, setMovie] = useState({});
+  const [trailer, setTrailer] = useState({});
 
   // https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es-ES&query=${tittle}
   // http://api.themoviedb.org/3/movie/${movie_id}?api_key=279a6209c3a88953123109103b1416fd
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/movie/${tittle}?api_key=279a6209c3a88953123109103b1416fd&language=es-ES`)
-
       .then((r) => r.json())
       .then((f) => setMovie(f));
   }, [tittle]);
+
+  useEffect(()=>{
+    fetch(`https://api.themoviedb.org/3/movie/${tittle}/videos?api_key=279a6209c3a88953123109103b1416fd&append_to_response=videos`)
+    .then((n) => n.json())
+          .then((t) => setTrailer(t));
+  },[tittle])
 
 
   return (
@@ -64,14 +70,27 @@ const UserMovieDetail = () => {
           ))}
         </div>
 
-
-
         <p>{`${t('details.budget')}: $${movie.budget}`}</p>
         <p>{`${t('details.revenue')}: $${movie.revenue}`}</p>     
         <p>{`${t('details.time')}: ${movie.runtime} min.`}</p>   
         <p>{`${t('details.tagline')}: ${movie.tagline}`}</p>     
         <p>{`${t('details.overview')}:  ${movie.overview}`}</p>
+
+
+
+        <div className="wrap_trailers">Trailers:
+        {trailer.results?.map((v) => (
+          <div className="trailers" key={v.id}>
+          <a href={`https://www.youtube.com/watch?v=${v.key}`} target="_blank" rel="noreferrer">{v.name}</a>
+          </div>
+        ))}
+      
       </div>
+
+
+      </div>
+
+      
 
 
       </div>
