@@ -98,18 +98,18 @@ console.log(error);
 <div className="wrap-self">
 
 <div className="self-descriptions self-now">
-  <h5>{t("home.now")}</h5>
+  <p>{t("home.now")}</p>
   <img src={dispositivo} alt="foto de varios dispositivos" />
 
 </div>
 
 <div className="self-descriptions self-topten">
 <img src={like} alt="imagen de like" />
-  <h5>{t("home.top")}</h5>
+  <p>{t("home.top")}</p>
   </div>
 
 <div className="self-descriptions self-registered">
-  <h5>{t("home.register")}</h5>
+  <p>{t("home.register")}</p>
 <ul>
   <li>{t("home.liUno")}</li>
   <li>{t("home.liDos")}</li>
@@ -118,7 +118,7 @@ console.log(error);
 
 </div>
 
-<h2 className='title_wrap_rated'>Lo mas Popular según TMDB</h2>
+<h4 className='title_wrap_rated'>Lo mas Popular según TMDB</h4>
 <div className="wrap_rated">  
 {movie.results?.map((c) => (
 <div className='card_rated' key={c.id}>

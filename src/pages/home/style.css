@@ -1,6 +1,7 @@
 .wrap-home {
     box-sizing: border-box;
     color:#000;
+    font-size:.5rem
 }
 
 .wrap-carousel .imagen {
@@ -33,27 +34,37 @@
 .self-topten,
 .self-descriptions {
     border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .self-now img {
-    width: 100%;
+    width: 50%;
 }
 
-.self-now h5 {
+.self-now p {
     padding: 0 20px;
+    font-size: 1rem;
 }
 
 .self-topten img {
-    width: 100%;
+    width: 50%;
 }
 
-.self-topten h5 {
+.self-topten p {
     padding: 0 20px;
+    font-size: 1rem;
 }
 
 
-.self-registered h5 {
+.self-registered p {
     padding: 0 20px;
+    font-size: 1rem;
+}
+
+.self-registered ul li {
+    font-size: 1rem;
 }
 
 .wrap-logoDB {
@@ -78,20 +89,19 @@
 .wrap_rated{
     width:100%;
     display: flex;
-    flex-direction: column-reverse;
     padding: 10px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card_rated{
 margin: 7px 0;
-width: 100%;
+width: 40%;
     display: flex;
     align-items: center;
     box-shadow: 0 0 2px #000, 0 0 3px #fff;
     padding:3px;
 }
-
 
 .poster-rated img{
     width: 100%;
@@ -125,23 +135,6 @@ width: 100%;
         color: #000;
         border: none;
     }
-
-    .self-now h5 {
-        font-size: 1rem;
-    }
-
-    .self-topten h5 {
-        font-size: 1rem;
-    }
-
-    .self-registered h5 {
-        font-size: 1rem;
-    }
-
-    .self-registered ul li {
-        font-size: 1rem;
-    }
-
     .logoDB {
         width: 20%;
         height: 100%
@@ -154,8 +147,7 @@ width: 100%;
 
     .card_rated{
         width: 32%;
-    }
-        
+    }      
         
 
 }
