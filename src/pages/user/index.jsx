@@ -56,8 +56,8 @@ const getTitle = async (title) => {
               <div className="film_card_wrap_img">              
                 <img src={f.poster_path ? `https://image.tmdb.org/t/p/w500/${f.poster_path}` : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dCO_yi0ryq5_JUv7fMtqQQHaEK%26pid%3DApi&f=1' } alt={`poster de ${f.title}`} />
               </div>
-              <h4>{f.title}</h4>
-              <h5>{f.release_date}</h5>
+              <p>{f.title}</p>
+              <p>{f.release_date}</p>
             </div>
           )
           )

@@ -19,7 +19,7 @@ export default function Form({newTitle}){
 
 
     return(
-        <form onSubmit = {onSubmit}>
+        <form className="form" onSubmit = {onSubmit}>
         <input type="text" className="input-search" placeholder={t("user.search")}  autoFocus onChange = {(e) =>setTitle(e.target.value)} />
       </form>  
     )

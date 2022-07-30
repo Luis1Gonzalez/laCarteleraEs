@@ -1,0 +1,20 @@
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-search{
+    width: 70%;
+    padding: 3px;
+    text-align: center;
+}
+
+/* ===================================== */
+
+@media (min-width: 770px) {
+    .input-search{
+        width: 50%;
+    }
+}
+
