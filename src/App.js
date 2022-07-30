@@ -103,7 +103,7 @@ function App() {
       <Route path='/notification' element ={<Notification />}></Route>
       <Route path='/cookies' element ={<Cookies />}></Route>
       <Route path='/rgpd' element ={<Grpd />}></Route>
-      <Route path='/error' element ={<Error />}></Route>
+      <Route path='*' element ={<Error />}></Route>
       <Route path = '/auth'>
         <Route path='register' element = {<Register/>}></Route>
         <Route path='login' element = {<Login/>}></Route>             
