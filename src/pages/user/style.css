@@ -53,6 +53,19 @@ margin-top: 10px;
     margin: 10px;
     box-shadow: 0 0 3px #fff, 0 0 5px #000;
     padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.film_card_wrap_img{
+    width: 100%;;
+}
+
+.film_card_wrap_img{
+    width: 100%;;
+}
+
+.film_card_wrap_img img{
+    width: 100%;;
 }
 
 .film-card h2 {

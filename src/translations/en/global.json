@@ -57,13 +57,15 @@
 
     "details": {
         "genre": "Genre",
-        "year": "Year",
+        "premiere": "Premiere",
         "country": "Country",
-        "writer": "Writer",
-        "actors": "Actors",
+        "producedBy": "Produced by",
+        "producedIn": "Produced in",
         "budget": "Budget",
+        "revenue": "Revenue",
         "time": "Run Time",
-        "awards": "Awards"
+        "tagline": "Tagline",
+        "overview": "Overview"
     },
 
     "near": {

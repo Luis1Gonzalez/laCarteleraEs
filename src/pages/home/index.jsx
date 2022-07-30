@@ -21,18 +21,13 @@ export default function Home(){
 
   const [movie, setMovie] = useState({})
 
-//   useEffect(() =>{ 
-//     fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
-//     .then(r =>r.json())
-//     .then(f => setRated(f))
-//       },[])
-// console.log(rated)
+
 
 
 
 
 useEffect(()=> {
-  fetch(`${process.env.REACT_APP_API_kEY_TMDB_RATED}`)
+  fetch(`https://api.themoviedb.org/3/discover/movie?primary_release_year=2022&sort_by=vote_average.desc&api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es`)
   .then((response) => {
     return response.json();
   })

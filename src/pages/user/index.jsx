@@ -37,10 +37,6 @@ const getTitle = async (title) => {
     },[tittle])
 
 
-
-console.log(tittle)
-
-
     
 
   return(
@@ -56,9 +52,8 @@ console.log(tittle)
          <div className="card-search">
           {films?.results?.map((f) => (
             <div className="film-card" key={f.id} onClick = {() => navigate(`/film/${f.id}`)} >
-              <h3>{f.title}</h3>
               
-              <div>              
+              <div className="film_card_wrap_img">              
                 <img src={f.poster_path ? `https://image.tmdb.org/t/p/w500/${f.poster_path}` : 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dCO_yi0ryq5_JUv7fMtqQQHaEK%26pid%3DApi&f=1' } alt={`poster de ${f.title}`} />
               </div>
               <h4>{f.title}</h4>
@@ -67,9 +62,6 @@ console.log(tittle)
           )
           )
           }
-
-
-
     </div> 
   </div>
 </div>

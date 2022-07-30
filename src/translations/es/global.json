@@ -56,13 +56,15 @@
 
     "details": {
         "genre": "Genero",
-        "year": "Año",
+        "premiere": "Estreno",
         "country": "País",
-        "writer": "Escritor",
-        "actors": "Actores",
+        "producedBy": "Producida por",
+        "producedIn": "Producida en",
         "budget": "Presupuesto",
+        "revenue": "Beneficios",
         "time": "Duración",
-        "awards": "Premios"
+        "tagline": "Slogan",
+        "overview": "Resumen"
     },
 
     "near": {
