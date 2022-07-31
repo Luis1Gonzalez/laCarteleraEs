@@ -45,9 +45,6 @@ defineLanguage()
   .then((r =>r.json()))
   .then(f => setFilms(f))
     },[tittle, idioma])
-
-console.log(i18n.language)
-console.log(idioma)
     
 
   return(

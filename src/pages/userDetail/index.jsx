@@ -40,7 +40,7 @@ const UserMovieDetail = () => {
           .then((t) => setTrailer(t));
   },[tittle])
 
-console.log(idioma)
+
   return (
     <div className="wrap-details">
         <div className="wrap-film">
