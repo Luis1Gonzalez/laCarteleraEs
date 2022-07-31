@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import Form from "../../components/form";
+import { changeLanguage } from "i18next";
 
 
 
@@ -15,6 +16,7 @@ export default function User(){
   const [films, setFilms] = useState({});
   let [title,setTitle] = useState("")
   
+  let idioma = ""
 
   
   let tittle=""
@@ -28,15 +30,24 @@ const getTitle = async (title) => {
   setTitle(title)
 }    
 
+function defineLanguage(){
+if (i18n.language === 'es'){
+idioma = 'es-Es'
+}else {
+  idioma = 'en-Us'
+}
+}
+defineLanguage()
 
 
     useEffect(() =>{ 
-  fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es-ES&query=${tittle}`)
+  fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=${idioma}&query=${tittle}`)
   .then((r =>r.json()))
   .then(f => setFilms(f))
-    },[tittle])
+    },[tittle, idioma])
 
-
+console.log(i18n.language)
+console.log(idioma)
     
 
   return(

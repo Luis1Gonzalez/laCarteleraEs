@@ -14,15 +14,25 @@ const UserMovieDetail = () => {
   const { tittle } = useParams();
   const [movie, setMovie] = useState({});
   const [trailer, setTrailer] = useState({});
+  let idioma=""
 
   // https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es-ES&query=${tittle}
   // http://api.themoviedb.org/3/movie/${movie_id}?api_key=279a6209c3a88953123109103b1416fd
 
+  function defineLanguage(){
+    if (i18n.language === 'es'){
+    idioma = 'es-Es'
+    }else {
+      idioma = 'en-Us'
+    }
+    }
+    defineLanguage()
+
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${tittle}?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=es-ES`)
+    fetch(`https://api.themoviedb.org/3/movie/${tittle}?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&language=${idioma}`)
       .then((r) => r.json())
       .then((f) => setMovie(f));
-  }, [tittle]);
+  }, [tittle,idioma]);
 
   useEffect(()=>{
     fetch(`https://api.themoviedb.org/3/movie/${tittle}/videos?api_key=${process.env.REACT_APP_API_kEY_TMDB_ONLY}&append_to_response=videos`)
@@ -30,7 +40,7 @@ const UserMovieDetail = () => {
           .then((t) => setTrailer(t));
   },[tittle])
 
-
+console.log(idioma)
   return (
     <div className="wrap-details">
         <div className="wrap-film">
